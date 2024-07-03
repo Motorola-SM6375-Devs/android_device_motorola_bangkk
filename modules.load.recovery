@@ -1,7 +1,10 @@
+focaltech_v3.ko
+goodix_brl_mmi.ko
 msm_drm.ko
 mmi_relay.ko
-sensors_class.ko
-touchscreen_mmi.ko
 mmi_annotate.ko
 mmi_info.ko
-goodix_brl_mmi.ko
+mmi_parallel_charger_iio.ko
+mmi-smbcharger-iio.ko
+touchscreen_mmi.ko
+sensors_class.ko

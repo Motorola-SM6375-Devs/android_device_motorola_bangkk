@@ -14,25 +14,25 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/dubai
+DEVICE_PATH := device/motorola/bangkk
 
-# Inherit from motorola sm7325-common
-include device/motorola/sm7325-common/BoardConfigCommon.mk
+# Inherit from motorola sm6375-common
+include device/motorola/sm6375-common/BoardConfigCommon.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := dubai
+TARGET_BOOTLOADER_BOARD_NAME := bangkk
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.dubai
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.bangkk
 SOONG_CONFIG_qtidisplay_udfps := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_dubai.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_dubai.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_bangkk.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_bangkk.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hab.product=dubai
-TARGET_KERNEL_CONFIG += vendor/lineage_dubai.config
+BOARD_KERNEL_CMDLINE += androidboot.hab.product=bangkk
+TARGET_KERNEL_CONFIG += vendor/bangkk_defconfig
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
@@ -41,9 +41,8 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVIC
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
 
 # Partitions
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 116340535296
-BOARD_MOT_DP_GROUP_SIZE := 8921284608 # ( BOARD_SUPER_PARTITION_SIZE - 4MB )
-BOARD_SUPER_PARTITION_SIZE := 8925478912
+BOARD_MOT_DP_GROUP_SIZE := 6706692096 # (BOARD_SUPER_PARTITION_SIZE - 4MB)
+BOARD_SUPER_PARTITION_SIZE := 6710886400
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -52,8 +51,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 
-# Security
+# Security patch level
 VENDOR_SECURITY_PATCH := 2024-05-01
 
 # inherit from the proprietary version
-include vendor/motorola/dubai/BoardConfigVendor.mk
+include vendor/motorola/bangkk/BoardConfigVendor.mk

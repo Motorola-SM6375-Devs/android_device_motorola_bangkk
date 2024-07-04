@@ -1,6 +1,5 @@
 focaltech_v3.ko
 goodix_brl_mmi.ko
-msm_drm.ko
 mmi_relay.ko
 mmi_annotate.ko
 mmi_info.ko

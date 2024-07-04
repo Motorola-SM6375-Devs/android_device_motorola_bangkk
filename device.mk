@@ -75,6 +75,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/fts_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fts_ts.kl \
     $(LOCAL_PATH)/configs/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_ts.kl
 
+# Lineage Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.bangkk
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \

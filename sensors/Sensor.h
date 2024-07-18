@@ -122,18 +122,6 @@ class SysfsPollingOneShotSensor : public OneShotSensor {
 
 const std::string kTsPath = "/sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/";
 
-const std::string kTsDoubleTapPressedPath = kTsPath + "double_tap_pressed";
-const std::string kTsDoubleTapEnabledPath = kTsPath + "double_tap_enabled";
-
-class DoubleTapSensor : public SysfsPollingOneShotSensor {
-  public:
-    DoubleTapSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
-        : SysfsPollingOneShotSensor(
-              sensorHandle, callback, kTsDoubleTapPressedPath, kTsDoubleTapEnabledPath,
-              "Double Tap Sensor", "org.lineageos.sensor.double_tap",
-              static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) + 1)) {}
-};
-
 const std::string kTsUdfpsPressedPath = kTsPath + "udfps_pressed";
 const std::string kTsUdfpsEnabledPath = kTsPath + "udfps_enabled";
 

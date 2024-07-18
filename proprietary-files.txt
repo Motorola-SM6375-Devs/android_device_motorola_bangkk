@@ -270,6 +270,7 @@ vendor/lib64/sensors.moto.so
 vendor/lib64/sensors.ssc.so
 
 # Sensors Configs
+vendor/bin/capsense_reset
 vendor/etc/sensors/config/mot_camgest.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json

@@ -28,7 +28,6 @@ SOONG_CONFIG_qtidisplay_udfps := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_bangkk.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_bangkk.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=bangkk

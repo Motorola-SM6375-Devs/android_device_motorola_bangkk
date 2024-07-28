@@ -61,7 +61,9 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.bangkk
+    android.hardware.biometrics.fingerprint@2.3-service.bangkk \
+    com.motorola.hardware.biometric.fingerprint@1.0.vendor \
+    vendor.egistec.hardware.fingerprint@4.0.vendor
 
 # Init
 $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\

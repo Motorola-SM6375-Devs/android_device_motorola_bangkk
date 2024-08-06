@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from bangkk_g-user 14 U1TC34M.22-64-18 48c0d4 release-keys
+# All unpinned blobs are extracted from bangkk_g-user 14 U1TCS34M.22-64-18-2 b8200 release-keys
 
 # ACDB-data
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -155,6 +155,7 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 # Camera - Motorola
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
 vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
+vendor/bin/hw/motorola.hardware.camera.imgtuner@2.0-service
 vendor/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc
 vendor/lib64/motorola.hardware.camera.desktop@1.0.so
 vendor/lib64/motorola.hardware.camera.desktop@2.0.so
@@ -369,6 +370,7 @@ vendor/etc/qdcm_calib_data_mipi_moto_vid_tm_u8_1080p_dsc_655.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
 vendor/lib64/libRbsFlow.so
 vendor/lib64/libets_teeclient_v3.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so

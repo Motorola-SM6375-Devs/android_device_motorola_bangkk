@@ -24,6 +24,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=bangkk_g \
-    PRIVATE_BUILD_DESC="bangkk_g-user 14 U1TC34M.22-64-18 48c0d4 release-keys"
+    PRIVATE_BUILD_DESC="bangkk_g-user 14 U1TCS34M.22-64-18-2 b8200 release-keys"
 
-BUILD_FINGERPRINT := motorola/bangkk_g/bangkk:14/U1TC34M.22-64-18/48c0d4:user/release-keys
+BUILD_FINGERPRINT := motorola/bangkk_g/bangkk:14/U1TCS34M.22-64-18-2/b8200:user/release-keys

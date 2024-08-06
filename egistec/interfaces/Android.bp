@@ -1,0 +1,4 @@
+hidl_package_root {
+    name: "vendor.egistec.hardware",
+    path: "device/motorola/bangkk/egistec/interfaces",
+}

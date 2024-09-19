@@ -4,6 +4,12 @@ import /vendor/etc/init/hw/init.nfc.sec.rc
 on post-fs
    chown system system /sys/devices/platform/soc/4804000.ufshc/clkgate_enable
    chown system system /sys/devices/platform/soc/4804000.ufshc/devfreq/4804000.ufshc/min_freq
+   
+    # Sensors
+    chown system system /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_enabled
+    chown system system /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_pressed
+    chown system system /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/udfps_enabled
+    chown system system /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/udfps_pressed
 
 on post-fs-data
 
@@ -80,9 +86,6 @@ on boot
     chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/poll_delay
     chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/enable
     chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/poll_delay
-    # Change ownership for touch gesture
-    chown root input /sys/class/sensors/dt-gesture/enable
-    chown root input /sys/class/sensors/dt-gesture/poll_delay
     # touch
     chown system system /sys/class/touchscreen/primary/interpolation
     chmod 0660 /sys/class/touchscreen/primary/interpolation

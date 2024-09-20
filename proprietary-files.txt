@@ -23,7 +23,7 @@ vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/lib/libacdbloader.so
 vendor/lib64/libacdbloader.so
 
-# Camera - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
@@ -66,14 +66,6 @@ vendor/lib/libipebpsstriping.so
 vendor/lib/libipebpsstriping170.so
 vendor/lib/libjpege.so
 vendor/lib/liblowlight_ai_portrait.arcsoft.so
-vendor/lib/libmmcamera_bestats.so
-vendor/lib/libmmcamera_cac3.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_lscv35.so
-vendor/lib/libmmcamera_mfnr.so
-vendor/lib/libmmcamera_mfnr_t4.so
-vendor/lib/libmmcamera_pdpc.so
 vendor/lib/libmpbase.so
 vendor/lib/libofflinelog.so
 vendor/lib/libopencv.so
@@ -110,6 +102,7 @@ vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_super_night_se_raw.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
+vendor/lib64/libc2d_helper.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamxexternalformatutils.so
@@ -131,8 +124,6 @@ vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libmot_afd.so
-vendor/lib64/libmot_chi_desktop_helper.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
 vendor/lib64/libmmcamera_faceproc.so
@@ -141,6 +132,9 @@ vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
+vendor/lib64/libmot_afd.so
+vendor/lib64/libmot_chi_desktop_helper.so
+vendor/lib64/libmot_engine_settings.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
@@ -158,11 +152,15 @@ vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
-# Camera - Motorola - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera - Motorola
+vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
+vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
+vendor/bin/hw/motorola.hardware.camera.imgtuner@2.0-service
+vendor/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc
 vendor/lib64/motorola.hardware.camera.desktop@1.0.so
 vendor/lib64/motorola.hardware.camera.desktop@2.0.so
 
-# Camera - Components - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera - Components
 vendor/lib/camera/components/com.arcsoft.node.mfnr.so
 vendor/lib/camera/components/com.mot.node.c2d.so
 vendor/lib/camera/components/com.mot.node.dc_capture.so
@@ -272,7 +270,7 @@ vendor/lib64/camera/components/com.vidhance.node.ica.so
 vendor/lib64/camera/components/com.vidhance.node.processing.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 
-# Camera - feature2 - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera - feature2
 vendor/lib/com.qti.feature2.anchorsync.so
 vendor/lib/com.qti.feature2.arcrawpro.so
 vendor/lib/com.qti.feature2.demux.so
@@ -310,7 +308,7 @@ vendor/lib64/com.qti.feature2.rtmcx.so
 vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.swmf.so
 
-# Camera - etc - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera - etc
 vendor/etc/camera/SwadAIMod.bin
 vendor/etc/camera/SwadCalib.bin
 vendor/etc/camera/SwadParamList.txt
@@ -321,7 +319,7 @@ vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
 
-# Camera - eeprom - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera - eeprom
 vendor/lib/camera/com.mot.eeprom.mot_bangkk_s5k4h7_otp.so
 vendor/lib/camera/com.mot.eeprom.mot_gt24p128f_s5kgn9_eeprom.so
 vendor/lib/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
@@ -329,7 +327,7 @@ vendor/lib64/camera/com.mot.eeprom.mot_bangkk_s5k4h7_otp.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p128f_s5kgn9_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
 
-# Camera - sensors - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera - sensors
 vendor/lib/camera/com.qti.sensor.mot_ov16a1q.so
 vendor/lib/camera/com.qti.sensor.mot_s5k4h7.so
 vendor/lib/camera/com.qti.sensor.mot_s5kgn9.so
@@ -345,7 +343,7 @@ vendor/lib64/camera/com.qti.sensormodule.mot_bangkk_s5k4h7_qtech.bin
 vendor/lib64/camera/com.qti.sensormodule.mot_bangkk_s5kgn9_ak7377.bin
 vendor/lib64/camera/com.qti.sensormodule.mot_bangkk_s5kgn9_ofilm.bin
 
-# Camera - tuned - from bangkk_g-user 11 T3TC33.18-48-6 233c5 release-keys
+# Camera - tuned
 vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib/camera/com.qti.tuned.mot_bangkk_ov16a1q.bin
 vendor/lib/camera/com.qti.tuned.mot_bangkk_ov16a1q_india.bin

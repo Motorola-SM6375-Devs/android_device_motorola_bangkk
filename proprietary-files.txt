@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from bangkk_g-user 14 U1TCS34M.22-64-18-2 b8200 release-keys
+# All unpinned blobs are extracted from bangkk_g-user 14 U1TCS34M.22-64-18-3 aa936 release-keys
 
 # ACDB-data
 vendor/etc/acdbdata/Bluetooth_cal.acdb
